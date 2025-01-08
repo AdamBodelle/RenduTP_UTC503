@@ -54,7 +54,7 @@ true
 ________________
 Ex8:
 
-Ajout d'une realetion pour les tests:
+Ajout d'une relation pour les tests:
 parent('jacques', 'marie').
 
 ?- oncle(marc,paul).
