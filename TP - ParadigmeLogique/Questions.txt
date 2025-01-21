@@ -1,0 +1,75 @@
+Ex1:
+
+?- pere(X,marc).
+X = jacques.
+
+?- pere(marc,X).
+X = sophie.
+
+
+________________
+Ex2:
+
+?- grandparent(X,paul).
+false.
+
+?- grandparent(jacques,sophie).
+true.
+
+
+________________
+Ex3:
+
+?- frere(paul,X).
+false.
+
+
+________________
+Ex4:
+
+?- homme(X).
+X = pierre ;
+X = marc ;
+X = paul ;
+X = jacques.
+
+?- parent(X,sophie).
+X = marc.
+
+
+________________
+Ex6:
+
+?- longueur([pierre, marie, paul], N).
+N = 3.
+
+
+________________
+Ex7:
+
+?- present(marie, [marie,paul,pierre]).
+true
+
+
+________________
+Ex8:
+
+Ajout d'une realetion pour les tests:
+parent('jacques', 'marie').
+
+?- oncle(marc,paul).
+true.
+
+?- oncle(X,sophie).
+false.
+
+?- tante(X,sophie).
+X = marie
+
+
+________________
+Ex9:
+
+?- cousin(paul,X).
+X = sophie
+
